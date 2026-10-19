@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Причастие и причастный оборот: рабочий лист</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap">
+<style>
+:root{--bg:#f4f7fa;--card:#fff;--ink:#1c2b3a;--mute:#5b6b7b;--line:#d5dde6;--p:#0b7a75;--pbg:#d8f0ee;--o:#8a5a00;--obg:#fdecc0;--n:#c23b32;--ok:#1d7a3a;--okbg:#dcf3e2;--bad:#b3261e;--badbg:#fbe0dd;--sel:#dfe9f6;--selb:#3b6db3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121b25;--card:#1a2633;--ink:#e6edf4;--mute:#9fb0c0;--line:#2e3d4d;--p:#5fd2cb;--pbg:#14403f;--o:#f2c25b;--obg:#4a3a10;--n:#ff8d85;--ok:#7fdc9a;--okbg:#17402a;--bad:#ff9a92;--badbg:#4a1f1b;--sel:#22364d;--selb:#7aa8e6}}
+:root[data-theme="dark"]{--bg:#121b25;--card:#1a2633;--ink:#e6edf4;--mute:#9fb0c0;--line:#2e3d4d;--p:#5fd2cb;--pbg:#14403f;--o:#f2c25b;--obg:#4a3a10;--n:#ff8d85;--ok:#7fdc9a;--okbg:#17402a;--bad:#ff9a92;--badbg:#4a1f1b;--sel:#22364d;--selb:#7aa8e6}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 "PT Sans",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+h1,h2{font-family:"PT Serif",Georgia,serif;line-height:1.2}
+h1{font-size:2rem;margin:.6em 0 .2em}
+h2{font-size:1.5rem;margin:0 0 .5em}
+.lead{color:var(--mute);margin:0 0 1.5em}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;margin:20px 0}
+p{margin:.6em 0}
+.p{color:var(--p);font-weight:700}
+.n{color:var(--n);font-weight:700;border-bottom:2px solid var(--n)}
+.o{background:var(--obg);border-radius:4px;padding:0 3px}
+.o .p{background:var(--pbg);border-radius:3px;padding:0 2px}
+i.c{color:var(--bad);font-style:normal;font-weight:700;font-size:1.15em}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.9rem;color:var(--mute);margin:.8em 0}
+.box{border-left:5px solid var(--selb);background:var(--sel);padding:10px 14px;border-radius:0 10px 10px 0;margin:14px 0}
+.ex{font-family:"PT Serif",Georgia,serif;font-size:1.15rem;margin:.5em 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:620px){.two{grid-template-columns:1fr}}
+.cardmini{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border:1px solid var(--line);padding:6px 10px;text-align:left}
+.scroll{overflow-x:auto}
+ol.steps{padding-left:1.2em}
+ol.steps li{margin:.5em 0}
+button{font:inherit;cursor:pointer;color:var(--ink)}
+button:focus-visible{outline:3px solid var(--selb);outline-offset:2px}
+.btn{background:var(--selb);color:#fff;border:0;border-radius:10px;padding:8px 16px;font-weight:700}
+.btn.ghost{background:transparent;color:var(--selb);border:2px solid var(--selb)}
+.task{border-top:1px dashed var(--line);padding:14px 0}
+.sent{font-family:"PT Serif",Georgia,serif;font-size:1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
+.tk{background:transparent;border:2px solid transparent;border-radius:8px;padding:2px 6px;font-family:inherit;font-size:inherit}
+.tk:hover{border-color:var(--line)}
+.tk.on{background:var(--sel);border-color:var(--selb)}
+.tk.right{background:var(--okbg);border-color:var(--ok)}
+.tk.wrong{background:var(--badbg);border-color:var(--bad)}
+.gap{width:20px;height:30px;border:0;border-bottom:2px dotted var(--line);background:transparent;padding:0;color:var(--bad);font-weight:700;font-size:1.3rem;line-height:1}
+.gap.on{border-bottom-color:transparent}
+.gap.right{background:var(--okbg)}
+.gap.wrong{background:var(--badbg)}
+.gap.miss{background:var(--badbg);border-bottom:2px dashed var(--bad)}
+.res{margin:8px 0 0;font-size:.95rem;min-height:1.4em}
+.res.good{color:var(--ok)}.res.no{color:var(--bad)}
+.row{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+.score{font-weight:700;margin-top:10px}
+</style>
+</head>
+<body>
+<main>
+<h1>Причастие и причастный оборот</h1>
+<p class="lead">Сначала понимаем, что это такое. Потом учимся ставить запятые. Читай по порядку и пробуй сама: в разделе 5 есть интерактивные задания.</p>
+<div class="legend"><span><b class="p">причастие</b></span><span><span class="o">причастный оборот</span></span><span><span class="n">определяемое слово</span></span><span><i class="c">,</i> запятая</span></div>
+
+<section>
+<h2>1. Что такое причастие</h2>
+<p>Причастие — это «глагол, который стал прилагательным». От глагола у него действие, от прилагательного — вопрос.</p>
+<div class="box">
+<p><b>Глагол</b> отвечает «что делает?»: девочка <b>читает</b> книгу.</p>
+<p><b>Причастие</b> отвечает «какой?» и описывает предмет по действию: девочка, <b class="p">читающая</b> книгу. Какая девочка? <b class="p">Читающая</b>.</p>
+</div>
+<div class="scroll"><table>
+<tr><th>Глагол (что делает?)</th><th>Причастие (какой?)</th></tr>
+<tr><td>рисует</td><td>рисующий мальчик</td></tr>
+<tr><td>упал</td><td>упавший лист</td></tr>
+<tr><td>построили</td><td>построенный дом</td></tr>
+<tr><td>закрыли</td><td>закрытая дверь</td></tr>
+</table></div>
+<p><b>Как не ошибиться:</b> задай слову вопрос. Если «какой?» и в слове есть признак действия — это причастие. Помогают суффиксы: <b>-ущ-, -ющ-, -ащ-, -ящ-, -вш-, -ш-, -енн-, -нн-, -т-</b> (читающий, упавший, построенный, закрытый).</p>
+</section>
+
+<section>
+<h2>2. Что такое причастный оборот</h2>
+<p>Причастие редко ходит одно. Обычно рядом с ним есть слова, которые его поясняют. Причастие вместе с этими словами — <b>причастный оборот</b>.</p>
+<p class="ex">Туман, <span class="o"><b class="p">окутавший</b> берег</span>, медленно таял.</p>
+<p>Окутавший <b>что</b>? Берег. Значит, «берег» — зависимое слово, оно входит в оборот. А «медленно таял» — это про туман, а не про причастие. Туда мы границу оборота не двигаем.</p>
+<div class="box"><b>Как найти границы оборота.</b> Найди причастие. Задавай от него вопросы: что? кого? чем? где? как? Слова, которые отвечают, — внутри оборота. Как только слова перестали отвечать, оборот закончился.</div>
+</section>
+
+<section>
+<h2>3. Где ставить запятые</h2>
+<p>Для запятых нужно ещё одно слово — <span class="n">определяемое</span>. Это существительное, о котором говорит причастие. Какой туман? <b class="p">Окутавший</b> берег. Определяемое слово — «туман».</p>
+<p>Дальше всё зависит от одного: <b>где стоит оборот — после определяемого слова или перед ним</b>.</p>
+<div class="two">
+<div class="cardmini"><b>Оборот после слова — запятые есть.</b>
+<p class="ex"><span class="n">Туман</span><i class="c">,</i> <span class="o"><b class="p">окутавший</b> берег</span><i class="c">,</i> медленно таял.</p>
+<p>Оборот «обнимают» запятые с двух сторон. Если оборот в конце предложения, запятая нужна только перед ним, в конце будет точка.</p></div>
+<div class="cardmini"><b>Оборот перед словом — запятых нет.</b>
+<p class="ex"><span class="o"><b class="p">Окутавший</b> берег</span> <span class="n">туман</span> медленно таял.</p>
+<p>Оборот стоит прямо перед словом, к которому относится, — как длинное прилагательное. Запятые не нужны.</p></div>
+</div>
+<div class="box"><b>Особый случай: определяемое слово — местоимение</b> (он, она, мы, они, я, ты). Тогда запятые нужны <b>всегда</b>, даже если оборот стоит перед ним.
+<p class="ex"><span class="o"><b class="p">Уставший</b> от дороги</span><i class="c">,</i> <span class="n">он</span> упал на диван.</p>
+<p class="ex"><span class="n">Он</span><i class="c">,</i> <span class="o"><b class="p">уставший</b> от дороги</span><i class="c">,</i> упал на диван.</p></div>
+<p><b>Попробуй сама.</b> Нажимай кнопку и смотри, как запятые появляются и исчезают, когда оборот переезжает.</p>
+<div id="lab" class="cardmini"><div id="labS" class="ex"></div><p id="labN" class="res"></p><div class="row"><button class="btn" id="labB">Переставить оборот</button><button class="btn ghost" id="labX">Другой пример</button></div></div>
+</section>
+
+<section>
+<h2>4. Алгоритм из четырёх шагов</h2>
+<ol class="steps">
+<li><b>Найди причастие.</b> Слово отвечает на «какой?» и показывает действие.</li>
+<li><b>Найди оборот.</b> Спроси от причастия: что? кого? как? Слова с ответами — внутри оборота.</li>
+<li><b>Найди определяемое слово.</b> О чём или о ком говорит причастие?</li>
+<li><b>Посмотри, где оборот.</b> После слова — выделяем запятыми. Перед словом — без запятых. Если слово — местоимение, запятые всегда.</li>
+</ol>
+</section>
+
+<section>
+<h2>5. Тренируемся</h2>
+
+<div class="task"><b>Задание А.</b> Найди причастие: нажми на одно нужное слово.
+<div id="tA"></div></div>
+
+<div class="task"><b>Задание Б.</b> Выдели причастный оборот: нажми на все слова, которые в него входят (вместе с причастием).
+<div id="tB"></div></div>
+
+<div class="task"><b>Задание В.</b> Расставь запятые: нажми на промежуток между словами, где нужна запятая. Если запятых нет, оставь всё как есть и нажми «Проверить».
+<div id="tC"></div></div>
+</section>
+</main>
+<script>
+const $=(s,r=document)=>r.querySelector(s);
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e};
+
+/* Лаборатория */
+const LAB=[
+{a:'<span class="n">Туман</span><i class="c">,</i> <span class="o"><b class="p">окутавший</b> берег</span><i class="c">,</i> медленно таял.',b:'<span class="o"><b class="p">Окутавший</b> берег</span> <span class="n">туман</span> медленно таял.',na:'Оборот после слова «туман»: запятые с двух сторон.',nb:'Оборот перед словом «туман»: запятых нет.'},
+{a:'У дома росла <span class="n">яблоня</span><i class="c">,</i> <span class="o"><b class="p">посаженная</b> дедом</span>.',b:'У дома росла <span class="o"><b class="p">посаженная</b> дедом</span> <span class="n">яблоня</span>.',na:'Оборот после слова «яблоня», в конце предложения: одна запятая перед ним, потом точка.',nb:'Оборот перед словом «яблоня»: запятых нет.'},
+{a:'<span class="n">Он</span><i class="c">,</i> <span class="o"><b class="p">уставший</b> от дороги</span><i class="c">,</i> упал на диван.',b:'<span class="o"><b class="p">Уставший</b> от дороги</span><i class="c">,</i> <span class="n">он</span> упал на диван.',na:'Определяемое слово «он» — местоимение: запятые есть.',nb:'Оборот перед словом, но «он» — местоимение, поэтому запятая всё равно нужна.'}
+];
+let li=0,lafter=true;
+function labDraw(){const d=LAB[li];$('#labS').innerHTML=lafter?d.a:d.b;$('#labN').textContent=lafter?d.na:d.nb;}
+$('#labB').onclick=()=>{lafter=!lafter;labDraw()};
+$('#labX').onclick=()=>{li=(li+1)%LAB.length;lafter=true;labDraw()};
+labDraw();
+
+/* Выбор слов (А и Б) */
+function pickTask(root,data,single){
+let done=0;
+data.forEach(d=>{
+const w=el('div','task');const s=el('div','sent');const sel=new Set();const btns=[];
+d.t.split(' ').forEach((word,i)=>{const b=el('button','tk',word);b.type='button';
+b.onclick=()=>{if(single){sel.clear();btns.forEach(x=>x.classList.remove('on'))}
+if(sel.has(i)){sel.delete(i);b.classList.remove('on')}else{sel.add(i);b.classList.add('on')}};
+btns.push(b);s.append(b)});
+const r=el('p','res');const row=el('div','row');
+const ck=el('button','btn','Проверить');const rs=el('button','btn ghost','Заново');
+ck.onclick=()=>{const want=new Set(d.r);let ok=sel.size===want.size&&[...sel].every(x=>want.has(x));
+btns.forEach((b,i)=>{b.classList.remove('right','wrong');if(want.has(i)&&sel.has(i))b.classList.add('right');else if(sel.has(i))b.classList.add('wrong');else if(want.has(i))b.classList.add('wrong')});
+r.className='res '+(ok?'good':'no');r.textContent=(ok?'Верно! ':'Пока не так. ')+d.e};
+rs.onclick=()=>{sel.clear();btns.forEach(b=>b.classList.remove('on','right','wrong'));r.textContent='';r.className='res'};
+row.append(ck,rs);w.append(s,row,r);root.append(w)});
+}
+pickTask($('#tA'),[
+{t:'Мы любовались заходящим солнцем',r:[2],e:'«Заходящим» отвечает на вопрос «каким солнцем?» и показывает действие: это причастие.'},
+{t:'Опавшие листья шуршали под ногами',r:[0],e:'«Опавшие» — какие листья? Это причастие. «Шуршали» — глагол (что делали?).'},
+{t:'Я смотрел на играющих детей',r:[3],e:'«Играющих» — каких детей? Причастие.'}],true);
+pickTask($('#tB'),[
+{t:'Мальчик читающий книгу сидел у окна',r:[1,2],e:'Читающий (что?) книгу. «Сидел у окна» говорит про мальчика, в оборот не входит.'},
+{t:'Туман окутавший берег медленно таял',r:[1,2],e:'Окутавший (что?) берег. «Медленно таял» относится к туману.'},
+{t:'Мы подошли к дому построенному сто лет назад',r:[4,5,6,7],e:'Построенному (когда?) сто лет назад. «Мы подошли» в оборот не входит.'},
+{t:'Покрытая снегом поляна сверкала на солнце',r:[0,1],e:'Покрытая (чем?) снегом. Оборот стоит перед словом «поляна», а «сверкала на солнце» — другая часть предложения.'}],false);
+
+/* Запятые (В) */
+const C=[
+{t:'Девочка читающая книгу сидела у окна',c:[0,2],e:'Оборот «читающая книгу» стоит после слова «девочка»: запятые с двух сторон.'},
+{t:'Читающая книгу девочка сидела у окна',c:[],e:'Оборот стоит перед словом «девочка»: запятые не нужны.'},
+{t:'Я увидел на берегу лодку унесённую волной',c:[4],e:'Оборот после слова «лодку», в конце предложения: запятая только перед ним.'},
+{t:'Дорога ведущая к морю была пустой',c:[0,3],e:'Оборот «ведущая к морю» стоит после слова «дорога»: запятые с двух сторон.'},
+{t:'Усыпанное звёздами небо казалось бесконечным',c:[],e:'Оборот стоит перед словом «небо»: запятые не нужны.'},
+{t:'Он уставший от долгой дороги упал на диван',c:[0,4],e:'Определяемое слово «он» — местоимение. Оборот выделяем запятыми с двух сторон.'},
+{t:'Уставший от долгой дороги он упал на диван',c:[3],e:'Оборот стоит перед местоимением «он»: запятая нужна всё равно. Она отделяет оборот от остального предложения.'}];
+(function(){const root=$('#tC');
+const score=el('p','score');let results=new Array(C.length).fill(null);
+function upd(){const n=results.filter(x=>x===true).length;score.textContent='Верно: '+n+' из '+C.length}
+C.forEach((d,k)=>{
+const w=el('div','task');const s=el('div','sent');const on=new Set();const gaps=[];const words=d.t.split(' ');
+words.forEach((word,i)=>{s.append(el('span','',word));
+if(i<words.length-1){const g=el('button','gap','');g.type='button';g.setAttribute('aria-label','запятая после слова '+word);
+g.onclick=()=>{if(on.has(i)){on.delete(i);g.textContent='';g.classList.remove('on')}else{on.add(i);g.textContent=',';g.classList.add('on')}};
+gaps[i]=g;s.append(g);s.append(document.createTextNode(' '))}});
+s.append(el('span','','.'));
+const r=el('p','res');const row=el('div','row');
+const ck=el('button','btn','Проверить');const rs=el('button','btn ghost','Заново');
+ck.onclick=()=>{const want=new Set(d.c);let ok=on.size===want.size&&[...on].every(x=>want.has(x));
+gaps.forEach((g,i)=>{if(!g)return;g.classList.remove('right','wrong','miss');
+if(on.has(i)&&want.has(i))g.classList.add('right');else if(on.has(i))g.classList.add('wrong');else if(want.has(i)){g.classList.add('miss')}});
+results[k]=ok;upd();r.className='res '+(ok?'good':'no');r.textContent=(ok?'Верно! ':'Пока не так: красным отмечены ошибки. ')+d.e};
+rs.onclick=()=>{on.clear();gaps.forEach(g=>{if(g){g.textContent='';g.classList.remove('on','right','wrong','miss')}});r.textContent='';r.className='res';results[k]=null;upd()};
+row.append(ck,rs);w.append(s,row,r);root.append(w)});
+root.append(score);upd();
+})();
+</script>
+</body>
+</html>
